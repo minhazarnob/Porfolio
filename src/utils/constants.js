@@ -7,9 +7,9 @@ export const peronalInfo = {
     tagline: "Crafting seamless digital experience with modern web technology",
     resume: "./Arnob_Resume.pdf",
     bio: [
-        "I am passionate React developer with over 1 year exparience",
-        "My experience spans the entire frontend ecosystem from react",
-        "When I am not coding,you will find me contributing open source project"
+        "I am a Full-Stack Developer with 2 years of experience building web applications with React and Django.",
+        "I build responsive, fast interfaces with React, JavaScript, and TailwindCSS, and power them with secure REST APIs in Django.",
+        "When I am not coding, I enjoy learning new technologies, solving problems in C and C++, and improving my projects on GitHub."
     ]
 };
 
@@ -28,7 +28,7 @@ export const statistics = [
 ];
 
 export const aboutStats = [
-    {label: "Happy Clients", value:"45+"},
+    {label: "Projects", value:"5+"},
     {label:"Code Commits", value:"2.5k"},
     {label:"Github Stars", value: "500+"}
 ];

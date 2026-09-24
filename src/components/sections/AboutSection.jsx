@@ -1,12 +1,14 @@
-import {useState} from 'react';
+
 import {Download, Code2, Sparkles} from 'lucide-react';
-import { SiDjango,SiTailwindcss, SiTypescript,SiReact, SiJavascript, SiPython } from 'react-icons/si';
+import { SiDjango,SiTailwindcss, SiTypescript,SiReact } from 'react-icons/si';
+import { SiJavascript, SiPython, SiC, SiCplusplus,SiBootstrap} from 'react-icons/si';
 import {peronalInfo,aboutStats} from "../../utils/constants";
 import FadeIn from '../animations/FadeIn';
 import RadialGradients from '../brackgrounds/RadialGradients';
 
 const AboutSection = () => {
-    // Skill
+
+    // Skills
     const skills = [
         {name: "React.js", icon:SiReact, color:"#61DAFB"},
         {name: "Django", icon:SiDjango, color:"#000000"},
@@ -14,6 +16,9 @@ const AboutSection = () => {
         {name: "TailwindCSS", icon:SiTailwindcss, color:"#06B6D4"},
         {name: "JavaScript", icon:SiJavascript, color:"#339933"},
         {name: "python", icon:SiPython, color:"#47A248"},
+        {name: "C", icon:SiC, color:"#479848"},
+        {name: "C++", icon:SiCplusplus, color:"#475648"},
+        {name: "BootstrapCSS", icon:SiBootstrap, color:"#06B6D4"}, 
     ];
 
     return (
@@ -23,21 +28,19 @@ const AboutSection = () => {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+
                     {/* left column - Content */}
                     <div className="flex flex-col gap-12">
                         <div className="flex flex-col gap-8">
                             <FadeIn delay={60}>
                                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border-primary/30 bg-primary/10 rounded-full w-fit">
                                     <Code2 className="w-4 h-4 text-primary"/>
-                                    <span className="text-sm text-primary font-medium">
-                                        Full-Stack Developer
-                                    </span>
-                                    <Sparkles className="w-4 h-4 text-primary"/>
+                                    <span className="text-sm text-primary font-medium">Full-Stack Developer</span>
                                 </div>
                             </FadeIn>
 
                             <FadeIn delay={100}>
-                                <h3 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
+                                <h3 className="text-3xl lg:text-4xl font-normal text-white leading-tight">
                                     Crafting Digital Experience that Matter
                                 </h3>
                             </FadeIn>
@@ -45,7 +48,7 @@ const AboutSection = () => {
                             <FadeIn delay={200}>
                                 <div className="flex flex-col gap-4">
                                     {peronalInfo.bio.map((paragraph, index) => (
-                                        <p key={index} className="text-base text-white/70 leading-relaxed">
+                                        <p key={index} className="text-base text-white/60 leading-relaxed">
                                         {paragraph}
                                         </p>
                                     ))}
@@ -53,7 +56,7 @@ const AboutSection = () => {
                             </FadeIn>
                         </div>
 
-                        <FadeIn delay={300}>
+                        {/* <FadeIn delay={300}>
                             <div className="grid grid-cols-3 gap-8">
                                 {aboutStats.map((stat, index) => (
                                     <div key={index} className="relative pl-4">
@@ -67,14 +70,14 @@ const AboutSection = () => {
                                     </div>
                                 ))}
                             </div>
-                        </FadeIn>
+                        </FadeIn> */}
 
                         <FadeIn delay={400}>
                             <button
-                                onClick={()=>window.open(peronalInfo.resume,"_blank")}
-                                className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
+                                onClick={() => window.open(personalInfo.resume, "_blank")}
+                                className="inline-flex items-center gap-3 bg-white  text-black rounded-full px-6 py-2 text-base font-medium transition-all duration-300 w-fit group"
                             >
-                                <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300"/>
+                                <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
                                 Download Resume
                             </button>
                         </FadeIn>
@@ -168,12 +171,10 @@ const AboutSection = () => {
                             {skills.map((skill,index)=>(
                                 <div
                                     key={index}
-                                    className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105"
+                                    className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-110"
                                 >
                                     <skill.icon className="text-3xl text-primary rounded-sm"/>
-                                    <div className="text-sm text-white/80 font-medium text-center">
-                                        {skill.name}
-                                    </div>
+                                    <div className="text-sm text-white/80 font-medium text-center">{skill.name}</div>
 
                                     {/* Hover Glow Effect*/}
                                     <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300 "></div>

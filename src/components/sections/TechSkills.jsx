@@ -52,6 +52,7 @@ const TechSkills = () => {
         };
         return colors[level] || "text-gray-400 bg-gray-500/20 border-gray-500/30"
     };
+
     return (
         <section id="skills" className="relative py-20 bg-black overflow-hidden">
 
@@ -100,6 +101,7 @@ const TechSkills = () => {
 
                                     return (
                                         <div key={skill.id} className="space-y-2">
+
                                             <div className="space-y-2">
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center gap-3">
@@ -118,6 +120,7 @@ const TechSkills = () => {
                                                     {skill.level}
                                                 </span>
                                             </div>
+
                                             <div className="relative h-1.5 bg-white/5 rounded-full overflow-hidden">
                                                 <div 
                                                     className="absolute top-0 left-0 h-full bg-linear-to-r from-primary/10 to-primary/80 rounded-full transition-all duration-1000 ease-out"
@@ -128,6 +131,7 @@ const TechSkills = () => {
                                     )
                                 })}
                             </div>
+                            
                             {/* Hover Glow Effect*/}
                             <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/5 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300 pointer-events-none"></div>
                         </div>
