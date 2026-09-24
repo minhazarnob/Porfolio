@@ -74,7 +74,7 @@ const AboutSection = () => {
 
                         <FadeIn delay={400}>
                             <button
-                                onClick={() => window.open(personalInfo.resume, "_blank")}
+                                onClick={() => window.open(peronalInfo.resume, "_blank")}
                                 className="inline-flex items-center gap-3 bg-white  text-black rounded-full px-6 py-2 text-base font-medium transition-all duration-300 w-fit group"
                             >
                                 <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
@@ -88,21 +88,21 @@ const AboutSection = () => {
                         <div className="grid grid-cols-2 gap-4">
 
                             <div className="col-span-2 relative group">
-                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hove:opacity-75 transition-opacity duration-300 ">
-                                <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover: hover: border-primary/30 trnasition-all duration-300">
-                                <div className="flex items-start gap-4"></div>
-                                    <div className="p-3 bg-primary/10 rounded-xl">
-                                        <Code2 className="w-6 h-6 text-primary"/>
-                                    </div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"/>
+                                <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                                    <div className="flex items-start gap-4">
+                                        <div className="p-3 bg-primary/10 rounded-xl">
+                                            <Code2 className="w-6 h-6 text-primary"/>
+                                        </div>
 
-                                    <div className="flex-1">
-                                        <h3 className="text-lg font-semibold text-white mb-2">Expertise</h3>
-                                        <p className="text-sm text-white/70 leading-relaxed">
-                                            Specialized in building scalable web applications with modern technologies and best practices.
-                                        </p>
+                                        <div className="flex-1">
+                                            <h3 className="text-lg font-semibold text-white mb-2">Expertise</h3>
+                                            <p className="text-sm text-white/70 leading-relaxed">
+                                                Specialized in building scalable web applications with modern technologies and best practices.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         
 
@@ -119,7 +119,7 @@ const AboutSection = () => {
                                 </div>
                             </div>
 
-                            <div className="realtive group">
+                            <div className="relative group">
                                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 trnasition-all duration-300 h-full">
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
@@ -132,22 +132,26 @@ const AboutSection = () => {
                                 </div>
                             </div>
 
-                            <div className="cols-span-2 relative group">
+                            <div className="col-span-full relative group">
                                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                                <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 trnasition-all duration-300">
+                                <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                                     <div className="grid grid-cols-3 gap-6 text-center">
-                                    <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">100%</div>
-                                            <div className="text-xs text-white/60">Client Satisfaction</div>
-                                    </div>
-                                    <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">24/7</div>
-                                            <div className="text-xs text-white/60">Support Available</div>
-                                    </div>
-                                    <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">Fast</div>
-                                            <div className="text-xs text-white/60">Delivery Time</div>
-                                    </div>
+                                        <div>
+                                                <div className="text-2xl font-bold text-primary mb-1">15+</div>
+                                                <div className="text-sm text-white/60">GitHub Repositories</div>
+                                        </div>
+                                        <div>
+                                                <div className="text-2xl font-bold text-primary mb-1">24/7</div>
+                                                <div className="text-sm text-white/60">Support Available</div>
+                                        </div>
+                                        <div>
+                                                <div className="text-2xl font-bold text-primary mb-1">Fast</div>
+                                                <div className="text-sm text-white/60">Delivery Time</div>
+                                        </div>
+                                        <div>
+                                                <div className="text-2xl font-bold text-primary mb-1">12+</div>
+                                                <div className="text-sm text-white/60">Technology used</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
