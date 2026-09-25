@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-[1000] w-full py-4 bg-primary/60 transition-all duration-300 ${isScrolled? "bg-black/30 backdrop-blur-lg"
+            className={`fixed top-0 left-0 right-0 z-[1000] w-full py-4 bg-black/60 transition-all duration-300 ${isScrolled? "bg-black/30 backdrop-blur-lg"
             : "bg-transparent"}`} style={{transform: "translate3d(0,0,0)"}}
         >
             <div className="max-w-[1320px] mx-auto px-5">
@@ -66,7 +66,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button*/}
                     <button
                         onClick={()=> setIsMenuOpen(!isMenuOpen)}
-                        className="md:hidden p-4 text-white hover:text-white/80 trnsition-colors"
+                        className="md:hidden p-4 text-white hover:text-white/80 transition-colors"
                         aria-label="menu"
                         aria-expanded = {isMenuOpen}
                     >
