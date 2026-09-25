@@ -75,7 +75,7 @@ const AboutSection = () => {
                         <FadeIn delay={400}>
                             <button
                                 onClick={() => window.open(peronalInfo.resume, "_blank")}
-                                className="inline-flex items-center gap-3 bg-white  text-black rounded-full px-6 py-2 text-base font-medium transition-all duration-300 w-fit group"
+                                className="inline-flex items-center gap-3 bg-white  text-black rounded-full px-6 py-2 text-base font-medium transition-all duration-300 w-fit group hover:cursor-pointer"
                             >
                                 <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
                                 Download Resume

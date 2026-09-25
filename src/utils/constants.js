@@ -28,11 +28,11 @@ export const statistics = [
     {label:"Problem solved", value:"200+"},
 ];
 
-export const aboutStats = [
-    {label: "Projects", value:"5+"},
-    {label:"Code Commits", value:"2.5k"},
-    {label:"Github Stars", value: "500+"}
-];
+// export const aboutStats = [
+//     {label: "Projects", value:"5+"},
+//     {label:"Code Commits", value:"2.5k"},
+//     {label:"Github Stars", value: "500+"}
+// ];
 
 export const Navlinks = [
     {id: "about", label:"About"},
