@@ -2,7 +2,7 @@
 import {Download, Code2, Sparkles} from 'lucide-react';
 import { SiDjango,SiTailwindcss, SiTypescript,SiReact } from 'react-icons/si';
 import { SiJavascript, SiPython, SiC, SiCplusplus,SiBootstrap} from 'react-icons/si';
-import {peronalInfo,aboutStats} from "../../utils/constants";
+import {peronalInfo} from "../../utils/constants";
 import FadeIn from '../animations/FadeIn';
 import RadialGradients from '../brackgrounds/RadialGradients';
 
