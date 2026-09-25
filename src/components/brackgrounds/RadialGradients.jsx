@@ -4,7 +4,7 @@ const RadialGradients = ({variant = "hero", gradients=[]}) => {
     const variants = {
         hero: [
             {
-                position: "top-1 left-1 -translate-x-1/2 -translate-y-1/2",
+                position: "top-2 left-2 -translate-x-1/2 -translate-y-1/2",
                 size: "w-[1400px] h-[1400px]",
                 colors: [
                     {color: "rgba(141,255,105,0.25)", stop: "100%"},

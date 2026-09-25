@@ -1,7 +1,8 @@
 
 export const peronalInfo = {
     name: "Portfolio",
-    title:"React.JS and Django developer",
+    title:"React.js and Django developer",
+    developer: "Minhaz Shikder Arnob",
     email:"arnobsikder57@gmail.com",
     location: "Mymensingh, Bangladesh",
     tagline: "Crafting seamless digital experience with modern web technology",
@@ -21,10 +22,10 @@ export const socialLinks = {
 }
 
 export const statistics = [
-    {label:"Years Experience", value:"3+"},
+    {label:"Years Experience", value:"2.5+"},
     {label:"Projects Completed", value:"5+"},
-    {label:"Technologies", value:"10+"},
-    {label:"Client Satisfaction", value:"80%"},
+    {label:"Technologies", value:"12+"},
+    {label:"Problem solved", value:"200+"},
 ];
 
 export const aboutStats = [

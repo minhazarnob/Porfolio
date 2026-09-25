@@ -41,7 +41,7 @@ const AboutSection = () => {
 
                             <FadeIn delay={100}>
                                 <h3 className="text-3xl lg:text-4xl font-normal text-white leading-tight">
-                                    Crafting Digital Experience that Matter
+                                    Full Stack Developer Crafting Digital Experiences that Matter
                                 </h3>
                             </FadeIn>
 
@@ -148,10 +148,6 @@ const AboutSection = () => {
                                                 <div className="text-2xl font-bold text-primary mb-1">Fast</div>
                                                 <div className="text-sm text-white/60">Delivery Time</div>
                                         </div>
-                                        <div>
-                                                <div className="text-2xl font-bold text-primary mb-1">12+</div>
-                                                <div className="text-sm text-white/60">Technology used</div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +162,7 @@ const AboutSection = () => {
                             <h3 className="text-2xl font-normal text-white mb-2">
                                 Tech Stack & Expertise
                             </h3>
-                            <p className="text-sm text-white/60">
+                            <p className="text-lg text-white/60">
                                 Technologies I work with to build amazing product
                             </p>
                         </div>

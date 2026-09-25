@@ -1,4 +1,4 @@
-import {useState} from 'react';
+
 import { ChevronDown, Star } from 'lucide-react';
 import { SiReact,SiTailwindcss } from 'react-icons/si';
 import { SiDjango,SiJavascript,SiBootstrap } from 'react-icons/si';
@@ -24,21 +24,31 @@ const HeroSection = () => {
                         <FadeIn delay={0}>
                             <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
                                 <Star className="w-4 h-4 text-white fill-white"/>
-                                <span className="text-xs md:text-sm text-white tracking-[1.2px]">
+                                <span className="text-sm lg:text-sm md:text-xs text-white tracking-[1.2px]">
                                     {peronalInfo.title} | Based in {peronalInfo.location}
                                 </span>
                             </div>
                         </FadeIn>
 
                         <FadeIn delay={100}>
-                            <h5 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
-                                React.js Developer Portfolio
+                            <h5 className="text-2xl md:text-3xl lg:text-4xl font-normal text-white mb-6 leading-tight">
+                                Fullstack web developer portfolio 
                             </h5>
+                            <div className="relative inline-block mb-8">
+                                {/* Blurred behind glow layer */}
+                                <p className="absolute inset-0 text-2xl md:text-3xl lg:text-4xl text-primary blur-xl opacity-50 font-normal select-none" aria-hidden="true">
+                                    Minhaz Shikder Arnob
+                                </p>
+                                {/* Visible crisp text*/}
+                                <p className="relative text-2xl md:text-3xl lg:text-4xl text-primary font-normal">
+                                    Minhaz Shikder Arnob
+                                </p>
+                            </div>
                         </FadeIn>
 
                         <FadeIn delay={200}>
                             <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                                Building modern, scalable web application with React, JavaScript and cutting-edge technologies.
+                                Building modern, scalable web application with React, Django, JavaScript and cutting-edge technologies.
                                 Transforming ideas into exceptional digital experience.
                             </p>
                         </FadeIn>
@@ -46,9 +56,9 @@ const HeroSection = () => {
                         <FadeIn delay={300}>
                             <button
                                 onClick={()=> scrollToSection("contact")}
-                                className="inline-flex items-center gap-0 mb-12 group"
+                                className="inline-flex items-center gap-0 mb-12 group hover:cursor-pointer"
                             >
-                                <div className="relative z-10 bg-white text-[#212121] rounded-[17px] px-[13px] py-[13px] text-base font-medium border border-white">
+                                <div className="relative z-10 bg-white text-black rounded-full px-4 py-2 text-base font-medium border border-white">
                                     Get in Touch
                                 </div>
                             </button>
@@ -57,8 +67,8 @@ const HeroSection = () => {
                         <FadeIn delay={400}>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
                                 {statistics.map((stat, index) => (
-                                    <div key={index} className="text-left border-r border-white/50 pr-10 last:border-r-0">
-                                        <div className="text-2xl font-normal text-primary mb-[8px] font-mono">{stat.value}</div>
+                                    <div key={index} className="text-left border-r border-white/60 pr-10 last:border-r-0">
+                                        <div className="text-2xl font-medium text-primary mb-2">{stat.value}</div>
                                         <p className="text-sm text-white leading-snug">{stat.label}</p>
                                     </div>
                                 ))}
@@ -68,8 +78,8 @@ const HeroSection = () => {
 
                     {/* Right column - Developer image */}
                     <FadeIn delay={200}>
-                        <div className=" relative">
-                            <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group">
+                        <div className="relative">
+                            <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[27rem] ml-auto group">
                                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
                                     <div className="absolute inset-[-2px] bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl "></div>
                                 </div>
@@ -85,23 +95,23 @@ const HeroSection = () => {
                                         <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-5">
 
                                             <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                                <SiReact className="w-full h-full text-primary"/>
+                                                <SiReact className="w-full h-full text-primary rounded-sm"/>
+                                            </div>
+
+                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110  transition-transform duration-300">
+                                                <SiDjango className="w-full h-full text-primary rounded-sm"/>
                                             </div>
 
                                             <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                                <SiDjango className="w-full h-full text-primary"/>
+                                                <SiTailwindcss className="w-full h-full text-primary rounded-sm"/>
                                             </div>
 
-                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                                <SiTailwindcss className="w-full h-full text-primary"/>
+                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110 rounded-xl transition-transform duration-300">
+                                                <SiJavascript className="w-full h-full text-primary rounded-sm"/>
                                             </div>
 
-                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                                <SiJavascript className="w-full h-full text-primary"/>
-                                            </div>
-
-                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                                <SiBootstrap className="w-full h-full text-primary"/>
+                                            <div className="w-6 h-6 flex items-center justify-center hover:scale-110 rounded-lg transition-transform duration-300">
+                                                <SiBootstrap className="w-full h-full text-primary rounded-sm"/>
                                             </div>
                                         </div>
                                     </FadeIn>
