@@ -1,6 +1,7 @@
 
-import { ExternalLink, TrendingUp } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+
 
 const ProjectCards = ({project}) => {
     const {title, description, image, technologies, demoUrl,githubUrl} = project;

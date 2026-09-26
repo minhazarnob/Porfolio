@@ -68,7 +68,7 @@ const HeroSection = () => {
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
                                 {statistics.map((stat, index) => (
                                     <div key={index} className="text-left border-r border-white/60 pr-10 last:border-r-0">
-                                        <div className="text-2xl font-medium text-primary mb-2">{stat.value}</div>
+                                        <div className="text-xl font-bold text-primary mb-2">{stat.value}</div>
                                         <p className="text-sm text-white leading-snug">{stat.label}</p>
                                     </div>
                                 ))}
